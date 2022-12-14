@@ -1,10 +1,13 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Laraveles\Rating\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Laraveles\Models\Rating;
+use Laraveles\Rating\Tests\Models\Page;
+use Laraveles\Rating\Tests\Models\User;
+use Laraveles\RatingServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use VendorName\Skeleton\SkeletonServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -20,17 +23,32 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            SkeletonServiceProvider::class,
+            RatingServiceProvider::class,
         ];
     }
 
     public function getEnvironmentSetUp($app)
     {
-        config()->set('database.default', 'testing');
+        //config()->set('database.default', 'testing');
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_skeleton_table.php.stub';
-        $migration->up();
-        */
+        $app['config']->set('app.locale', 'es');
+        $app['config']->set('database.default', 'sqlite');
+        $app['config']->set('database.connections.sqlite', [
+            'driver' => 'sqlite',
+            'database' => __DIR__.'/database.sqlite',
+            'prefix' => '',
+        ]);
+        $app['config']->set('auth.providers.users.model', User::class);
+        $app['config']->set('auth.providers.pages.model', Page::class);
+        $app['config']->set('app.key', 'wslxrEFGWY6GfGhvN9L3wH3KSRJQQpBD');
+        $app['config']->set('rating.models.rating', Rating::class);
+        $app['config']->set('rating.required_approval', false);
+        $app['config']->set('rating.from', 1);
+        $app['config']->set('rating.to', 10);
+    }
+
+    protected function resetDatabase()
+    {
+        file_put_contents(__DIR__.'/database.sqlite', null);
     }
 }
