@@ -9,7 +9,6 @@ use Laraveles\Traits\CanRate;
 
 class User extends Authenticatable implements Rating
 {
-
     use CanRate, CanBeRated;
 
     protected $fillable = [
@@ -24,5 +23,4 @@ class User extends Authenticatable implements Rating
     {
         return $this->name;
     }
-
 }

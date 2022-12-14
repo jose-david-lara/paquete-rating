@@ -8,8 +8,8 @@ class InvalidScore extends Exception
 {
     //
 
-
     private $from;
+
     private $to;
 
     public function __construct($from, $to)
@@ -18,15 +18,13 @@ class InvalidScore extends Exception
         $this->to = $to;
     }
 
-    public function rendered (){
-
-
-       return response()->json([
-           trans('rating.invalidScore',[
+    public function rendered()
+    {
+        return response()->json([
+            trans('rating.invalidScore', [
                 'from' => $this->from,
-               'to' => $this->to
-           ])
-    ]);
-
+                'to' => $this->to,
+            ]),
+        ]);
     }
 }
