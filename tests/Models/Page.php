@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraveles\Rating\Rating\Tests\Models;
+namespace Laraveles\Rating\Tests\Models;
 
 use Laraveles\Rating\Contracts\Rating;
 use Laraveles\Rating\Traits\CanBeRated;

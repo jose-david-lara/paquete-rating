@@ -1,6 +1,6 @@
 {
     "name": "jose-david-lara/paquete-rating",
-    "description": ":package_description",
+    "description": "Laravel Eloquent Rating allows you to assign ratings to any model.",
     "keywords": [
         "eloquent",
         "laravel",

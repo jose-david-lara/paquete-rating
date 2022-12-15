@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraveles\Rating\Rating\Tests\Models;
+namespace Laraveles\Rating\Tests\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laraveles\Rating\Contracts\Rating;
