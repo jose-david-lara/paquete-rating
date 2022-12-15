@@ -1,17 +1,17 @@
 <?php
 
-namespace Laraveles\Rating\Tests;
+namespace Laraveles\Rating\Rating\Tests;
 
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Event;
-use Laraveles\Rating\Tests\Models\Page;
-use Laraveles\Rating\Tests\Models\SimplePage;
-use Laraveles\Rating\Tests\Models\User;
+use Laraveles\Rating\Rating\Tests\Models\Page;
+use Laraveles\Rating\Rating\Tests\Models\SimplePage;
+use Laraveles\Rating\Rating\Tests\Models\User;
 use TypeError;
 
-class RatingTest extends \Laraveles\Rating\Tests\TestCase
+class RatingTest extends \Laraveles\Rating\Rating\Tests\TestCase
 {
     use RefreshDatabase;
 

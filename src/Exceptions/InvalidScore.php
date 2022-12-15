@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraveles\Exceptions;
+namespace Laraveles\Rating\Exceptions;
 
 use Exception;
 

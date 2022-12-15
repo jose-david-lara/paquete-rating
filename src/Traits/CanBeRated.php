@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraveles\Traits;
+namespace Laraveles\Rating\Traits;
 
 trait CanBeRated
 {

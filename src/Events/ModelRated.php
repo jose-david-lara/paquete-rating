@@ -1,14 +1,14 @@
 <?php
 
-namespace Laraveles\Events;
+namespace Laraveles\Rating\Events;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Laraveles\Contracts\Qualifier;
-use Laraveles\Contracts\Rateable;
+use Laraveles\Rating\Contracts\Qualifier;
+use Laraveles\Rating\Contracts\Rateable;
 
 class ModelRated
 {

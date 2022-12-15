@@ -1,12 +1,12 @@
 <?php
 
-namespace Laraveles\Rating\Tests;
+namespace Laraveles\Rating\Rating\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Laraveles\Models\Rating;
-use Laraveles\Rating\Tests\Models\Page;
-use Laraveles\Rating\Tests\Models\User;
-use Laraveles\RatingServiceProvider;
+use Laraveles\Rating\Models\Rating;
+use Laraveles\Rating\Rating\Tests\Models\Page;
+use Laraveles\Rating\Rating\Tests\Models\User;
+use Laraveles\Rating\RatingServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
