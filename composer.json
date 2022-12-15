@@ -2,11 +2,16 @@
     "name": "jose-david-lara/paquete-rating",
     "description": ":package_description",
     "keywords": [
-        ":vendor_name",
+        "eloquent",
         "laravel",
-        ":package_slug"
+        "model",
+        "rating",
+        "rate",
+        "stars",
+        "star",
+        "system"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/jose-david-lara/paquete-rating",
     "license": "MIT",
     "authors": [
         {
@@ -28,18 +33,18 @@
         "laravel/pint": "^1.0",
         "nunomaduro/collision": "^6.0",
         "nunomaduro/larastan": "^2.0.1",
-        "orchestra/testbench": "^7.0",
         "pestphp/pest": "^1.21",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "^9.5",
-        "friendsofphp/php-cs-fixer": "^2.18",
-        "symfony/var-dumper": "^6.3.x-dev"
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "symfony/var-dumper": "^5.0",
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
-            "Laraveles\\": "src"
+            "Laraveles\\Rating\\": "src"
         }
     },
     "autoload-dev": {
@@ -55,20 +60,13 @@
         "format": "vendor/bin/pint"
     },
     "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "pestphp/pest-plugin": true,
-            "phpstan/extension-installer": true
-        }
+        "sort-packages": true
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
-            }
+                "Laraveles\\Rating\\RatingServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev"
