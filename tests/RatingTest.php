@@ -11,7 +11,7 @@ use Laraveles\Rating\Tests\Models\SimplePage;
 use Laraveles\Rating\Tests\Models\User;
 use TypeError;
 
-class RatingTest extends \Laraveles\Rating\Tests\TestCase
+class RatingTest extends TestCase
 {
     use RefreshDatabase;
 

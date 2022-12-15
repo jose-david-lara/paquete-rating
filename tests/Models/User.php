@@ -3,9 +3,9 @@
 namespace Laraveles\Rating\Tests\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Laraveles\Contracts\Rating;
-use Laraveles\Traits\CanBeRated;
-use Laraveles\Traits\CanRate;
+use Laraveles\Rating\Contracts\Rating;
+use Laraveles\Rating\Traits\CanBeRated;
+use Laraveles\Rating\Traits\CanRate;
 
 class User extends Authenticatable implements Rating
 {

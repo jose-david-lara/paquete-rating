@@ -1,10 +1,10 @@
 <?php
 
-namespace Laraveles\Traits;
+namespace Laraveles\Rating\Traits;
 
-use Laraveles\Contracts\Rateable;
-use Laraveles\Events\ModelRated;
-use Laraveles\Exceptions\InvalidScore;
+use Laraveles\Rating\Contracts\Rateable;
+use Laraveles\Rating\Events\ModelRated;
+use Laraveles\Rating\Exceptions\InvalidScore;
 
 trait CanRate
 {

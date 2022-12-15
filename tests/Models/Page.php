@@ -2,9 +2,9 @@
 
 namespace Laraveles\Rating\Tests\Models;
 
-use Laraveles\Contracts\Rating;
-use Laraveles\Traits\CanBeRated;
-use Laraveles\Traits\CanRate;
+use Laraveles\Rating\Contracts\Rating;
+use Laraveles\Rating\Traits\CanBeRated;
+use Laraveles\Rating\Traits\CanRate;
 
 class Page extends Model implements Rating
 {

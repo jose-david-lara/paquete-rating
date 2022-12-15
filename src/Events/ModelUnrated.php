@@ -1,9 +1,9 @@
 <?php
 
-namespace Laraveles\Events;
+namespace Laraveles\Rating\Events;
 
-use Laraveles\Contracts\Qualifier;
-use Laraveles\Contracts\Rateable;
+use Laraveles\Rating\Contracts\Qualifier;
+use Laraveles\Rating\Contracts\Rateable;
 
 class ModelUnrated
 {

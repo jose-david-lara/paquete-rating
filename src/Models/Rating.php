@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraveles\Models;
+namespace Laraveles\Rating\Models;
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
 

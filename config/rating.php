@@ -1,6 +1,6 @@
 <?php
 
-use Laraveles\Models\Rating;
+use Laraveles\Rating\Models\Rating;
 
 return [
     'models' => [

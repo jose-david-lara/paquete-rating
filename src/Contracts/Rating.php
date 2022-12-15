@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraveles\Contracts;
+namespace Laraveles\Rating\Contracts;
 
 interface Rating extends Rateable, Qualifier
 {
