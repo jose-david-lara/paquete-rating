@@ -2,15 +2,14 @@
 
 namespace Laraveles\Rating\Tests;
 
-use Laraveles\Rating\Tests\Models\Page;
-use Laraveles\Rating\Tests\Models\SimplePage;
-use Laraveles\Rating\Tests\Models\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Event;
+use Laraveles\Rating\Tests\Models\Page;
+use Laraveles\Rating\Tests\Models\SimplePage;
+use Laraveles\Rating\Tests\Models\User;
 use TypeError;
-use Laraveles\Rating\Tests\TestCase;
 
 class RatingTest extends \Laraveles\Rating\Tests\TestCase
 {
@@ -25,7 +24,7 @@ class RatingTest extends \Laraveles\Rating\Tests\TestCase
         /** @var Page $page */
         $page = SimplePage::class;
 
-       // $user->rate($page,5);
+        // $user->rate($page,5);
     }
 
     public function test_rate_product()

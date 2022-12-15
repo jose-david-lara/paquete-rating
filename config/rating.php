@@ -1,11 +1,10 @@
 <?php
 
-
 use Laraveles\Models\Rating;
 
 return [
     'models' => [
-      'rating' => Rating::class,
+        'rating' => Rating::class,
     ],
     'required_approval' => true,
     'from' => 1,

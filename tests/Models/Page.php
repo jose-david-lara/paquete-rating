@@ -8,11 +8,10 @@ use Laraveles\Traits\CanRate;
 
 class Page extends Model implements Rating
 {
-
     use CanRate, CanBeRated;
 
     protected $fillable = [
-      'name',
+        'name',
     ];
 
     public function name(): string

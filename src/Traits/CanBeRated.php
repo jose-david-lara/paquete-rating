@@ -4,11 +4,9 @@ namespace Laraveles\Traits;
 
 trait CanBeRated
 {
-
-
     /**
-     * @param string|null $modelType
-     * @param bool $approved
+     * @param  string|null  $modelType
+     * @param  bool  $approved
      * @return HasMany
      */
     public function qualifications(string $modelType = null, bool $approved = false): HasMany
@@ -28,7 +26,7 @@ trait CanBeRated
     }
 
     /**
-     * @param Qualifier|Model $model
+     * @param  Qualifier|Model  $model
      * @return bool
      */
     public function hasRateBy(Qualifier $model): bool
@@ -38,7 +36,6 @@ trait CanBeRated
             ->where('qualifier_type', get_class($model))
             ->exists();
     }
-
 
     public function qualifiers(string $model = null)
     {
@@ -54,5 +51,4 @@ trait CanBeRated
     {
         return $this->qualifiers($model)->avg('score') ?: 0.0;
     }
-
 }
